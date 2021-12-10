@@ -1,0 +1,10 @@
+<h1> tous les flims </h1>
+
+<% @movies.each do | movie | %>
+<ul>
+<li><%= movie.title %></li>
+<li><%= movie.overview %></li>
+<li><%= movie.rating %></li>
+</ul>
+
+<% end %>
