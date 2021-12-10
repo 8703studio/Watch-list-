@@ -27,9 +27,6 @@
               </div>
               <small class="text-right flex-shrink-0"><%= link_to 'delete', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %></small>
               <div>
-              <div class="bg-white rounded shadow h-100">
-              <%= cl_image_tag @movie.photo.key, height: 300, width: 400, crop: :fill %>
-              </div>
               </div>
             </div>
           </div>
