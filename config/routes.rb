@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+root to: 'lists#index'
   resources :movies do
     resources :bookmarks, only: [ :new, :create ]
     resources :lists, except: [:edit, :update]
